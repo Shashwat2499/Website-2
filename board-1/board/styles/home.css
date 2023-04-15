@@ -1,0 +1,66 @@
+
+@import "../styles/style.css";
+.tagline{
+    margin-top: 2rem;
+    padding:2rem 5rem;
+    text-align: center;
+}
+.tagline h2{
+    color: var(--primary);
+    margin-bottom: 2.5rem;
+}
+.tagline p{
+    color: var(--black);
+    margin-bottom: 3rem;
+}
+.tagline button{
+    font-size: 1.1rem;
+}
+.book{
+    background-color: var(--black);
+    padding: 10px 20px;
+}
+.book a{
+    color: var(--secondary);
+
+}
+.team{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+}
+
+.team-text{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: flex-start;
+}
+
+
+.team-text h2{
+    color: var(--primary);
+    text-transform: uppercase;
+
+}
+
+.team-image{
+    min-width: 50%;
+   
+}
+/* float image */
+.team-img{
+    border-radius: 20px 20px;
+    float: right;
+}
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .team{
+        flex-direction: column-reverse;
+        justify-content: flex-end
+
+
+    }
+
+}

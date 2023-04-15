@@ -1,0 +1,193 @@
+/* default styles which are used for all pages */
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefce8;
+    --primary: #713f12;
+    --secondary:#fef3c7;
+    --black:#1e293b;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+button{
+    box-shadow: none;
+    border: none;
+}
+img{
+    width: 100%;
+}
+.logo{
+    color: var(--primary);
+   
+}
+.body{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding:0 2rem;
+    
+}
+a{
+    text-decoration: none;
+  
+    color: var(--black);
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--black) 2px solid;
+    text-transform: uppercase;
+    max-width: 100%;
+   
+}
+.navlinks{
+    flex-grow: 1;
+    max-width: 50%;
+    font-size: 1rem;
+
+}
+.navlinks ul{
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+
+}
+
+
+.navlink:hover a:not(.book){
+border-color: #1e293b;
+}
+.hero{
+    background-color: #713f12;
+    position: absolute;
+ background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content:center ;
+    position: relative;
+    align-items: center;
+
+}
+
+/* video with position and filter */
+video{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  filter: blur(10px);
+}
+.hero::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #fefce8,black 20% 80%, #fefce8) ;
+    opacity: 0.5;
+
+}
+
+.hero h1{
+color: #fefce8;
+position: relative;
+text-transform: uppercase;
+font-size: 3rem;
+z-index: 3;
+}
+/* Position of element */
+.banner{
+    position: relative;
+    
+    height: 4.3rem;
+}
+
+.offer{
+    margin-top: 1.5rem;
+    background-color: #713f12;
+    width: 120px;
+    text-align: center;
+    border-radius: 50%;
+   padding: 1rem;
+   position: absolute;
+  
+  color: aliceblue;
+
+   /* animation */
+   animation:banner 10s infinite alternate;
+}
+
+
+
+
+/* transition for button and booknow link */
+.book{
+    background-color: var(--black);
+    padding: 10px 20px;
+    color: var(--secondary);
+    transition: all 0.3s ease-in;
+}
+.book a{
+    color: var(--secondary);
+
+}
+
+button.book:hover, .book:hover{
+background-color: var(--secondary);
+outline: var(--primary) solid 3px;
+color: var(--primary);
+text-decoration: none;
+}
+button.book:hover a{
+    color: var(--primary);
+   
+
+
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+}
+.footer{
+    color: #fefce8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* keyframe */
+@keyframes banner {
+    to {left: 0}
+ from{  left: calc(100% - 120px);}
+ 
+
+}
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .navlinks ul{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .navlink{
+        margin-top: 0.8rem;
+    }
+
+}
+
+
+

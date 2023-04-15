@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/book.css">
+    <title>💈Barber shop</title>
+</head>
+<body>
+    <div class="body">
+
+        <nav>
+            
+                <div class="logo"><h1>Men's Style</h1></div>
+                <div class="navlinks"><ul>
+                    <li class="navlink"><a href="./index.html">Home</a> </li>
+                    <li class="navlink"><a href="./about.html">About</a> </li>
+                    <li class="navlink"><a href="./services.html">Services</a> </li>
+                    <li class="navlink "><a class="book" href="./book.html">Book now</a> </li>
+                </ul></div>
+          
+        </nav>
+
+        <div class="hero">
+            <h1>Book Now</h1>
+
+        </div>
+<form id="form" >
+    <div class="form">
+
+    <h2>
+        Full Name 
+    </h2>
+    <div class="line"></div>
+    <span>
+        <label for="name">First Name :</label>
+<input   type="text" name="fname" >
+
+    </span>
+    <span>
+        <label for="name">Last Name :</label>
+<input  type="text" name="lname" >
+
+    </span>
+
+<br>
+<div id="address">
+    <h2>
+        Address 
+    </h2>
+    <div class="line"></div>
+    <span>
+        <label for="address">Street Name</label>
+<input require  type="text" name="address">
+
+    </span>
+    <span>
+        <label for="address">Apt #</label>
+<input  type="text" name="address">
+
+    </span>
+    <span>
+        <label for="address">City</label>
+<input  type="text" name="address">
+
+    </span>
+    <span>
+        <label for="address">State</label>
+<input  type="text" name="address">
+
+    </span>
+    <span>
+        <label for="address">Area Code</label>
+<input  type="text" name="address">
+
+    </span>
+
+<br>
+</div>
+<h2>
+    Contact 
+</h2>
+<div class="line"></div>
+<span>
+    <label for="number">Phone No. :</label>
+    <input  type="number" name="number" id="number" >
+</span>
+
+
+<span>
+    <label for="email">E-mail :</label>
+<input   type="email" name="email" id="email">
+
+</span>
+<span>
+    <label for="password">Password</label>
+    
+    <input  minlength="8" type="password" name="password" id="password">
+</span>
+
+
+<br>
+
+<h2>
+    Appointment 
+</h2>
+<div class="line"></div>
+<span>
+    <label for="date">Date:</label>
+<input  type="date" name="date" id="date">
+
+</span>
+
+
+<span>
+    <label for="time">Time :</label>
+    <input  type="time" name="time" id="time" min="09:00" max="18:00" step="900">
+</span>
+
+<h2>
+    Gender 
+	</h2>
+	<div class="line"></div>
+	<br>
+	<input type="radio" id="html" name="fav_language" value="HTML">
+	<label for="html">Men</label>
+	<br>
+	<br>
+	<input type="radio" id="css" name="fav_language" value="CSS">
+	<label for="css">Women</label>
+	<br>
+
+<h2>
+    Services 
+</h2>
+<div class="line"></div>
+<div id="services"> 
+    <input type="checkbox" name="service" id="service1">
+        <label for="service">Beard Trim</label>
+       
+
+    <br>
+    <input type="checkbox" name="service" id="service2">
+        <label for="service">Hair Wash</label>
+     
+
+    <br>
+    <input type="checkbox" name="service" id="service3">
+    
+    <label for="service">Hair Styling</label>
+    <br>
+    <input type="checkbox" name="service" id="service4">
+    <label for="service">Clean Shave</label>
+  
+    <br><br>
+	<h2>
+    Type Your Message Here  
+	</h2>
+	<div class="line"></div>
+	<br>
+    <textarea  maxlength="50" id="" cols="30" placeholder="Any other service" rows="10"></textarea>
+</div>
+
+
+<input type="submit" class="book" value="submit">
+
+
+</div>
+
+</form>
+
+
+
+        <footer>
+            <div class="footer body">
+                <h3>Web data management assignment 1</h3>
+            </div>
+        </footer>
+    
+        <script src="./script.js"></script>        
+</body>
+
+</html>

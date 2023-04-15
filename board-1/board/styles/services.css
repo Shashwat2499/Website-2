@@ -1,0 +1,108 @@
+@import "../styles/style.css";
+.hero{
+    background-image: url(../images/equipments.jpg);
+    height: 40vh;
+}
+
+.main{
+display: grid;
+margin-top: 2rem;
+grid-template-columns: 1fr 1fr;
+justify-items: flex-start;
+margin-bottom: 2rem;
+
+}
+
+.services-header{
+text-transform: uppercase;
+color: var(--primary);
+margin-bottom: 2rem;
+}
+.services{
+margin-right: 2rem;
+}
+
+
+
+.grid-cards{
+
+    display: grid;
+    max-height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7,minmax(0, 1fr));
+    gap: 2rem 2rem;
+justify-items: stretch;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fefce8;
+    padding: 2rem 1rem;
+    text-align: center;
+   min-height: 190px ;
+
+}
+.grid-card1{
+    grid-row: span 3;
+}
+.grid-card2{
+    grid-row: 4/span 3;
+}
+.grid-card3{
+    grid-row:2/ span 3;
+}
+.grid-card4{
+    grid-row: 5/span 3;
+}
+.book{
+    grid-column: 1;
+
+
+
+}
+.grid-cards > .book a{
+
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+.services-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+.services-content p{
+font-size: 1.3rem;
+margin-bottom: 2rem;
+}
+/* float image */
+.services-content img{
+   float: left;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+    .grid-cards{
+        display:flex;
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+
+
+        max-height: max-content;
+    }
+    .card{
+       margin-bottom: 1rem;
+
+    }
+
+}

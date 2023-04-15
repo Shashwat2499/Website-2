@@ -1,0 +1,58 @@
+@import "./style.css";
+.hero{
+    background-image: url(../images/barber-g170f4ce84_1920.jpg);
+    background-position: top;
+    height: 40vh;
+}
+form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-bottom: 2rem;
+}
+input{
+    
+  outline: none;
+  border: 1px solid var(--primary);
+  padding: 0.2rem;
+
+
+}
+input[type=submit]{
+width: 100%;}
+
+.form{
+
+    
+    color: #f22240);
+    min-width: 350px;
+   
+}
+label{
+    font-weight: 700;
+}
+div > span{
+    display: flex;
+    justify-content: space-between;
+ 
+ min-width: 100%;
+ margin-bottom: 0.8rem;
+}
+#services{
+
+    margin-bottom: 2rem;
+ 
+}
+textarea{
+    width: 100%;
+}
+
+.book{
+    align-self: center;
+}
+.line{
+    min-height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 1.2rem;
+}
